@@ -1,0 +1,19 @@
+#tasksTable {
+    width: 100%;
+}
+
+.navbar {
+    background-color: lightblue;
+}
+
+.tasks {
+    margin-top: 20px;
+}
+
+.edit-task {
+    margin-right: 5px;
+}
+
+.actions {
+    display: flex;
+}
