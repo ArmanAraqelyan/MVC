@@ -28,12 +28,16 @@ CREATE TABLE `task` (
   `status` varchar(11) NOT NULL,
   `is_edited` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 /*Data for the table `task` */
 
 insert  into `task`(`id`,`name`,`email`,`text`,`status`,`is_edited`) values 
-(4,'asdasd','admin@adsdas.asdas','dasdasd','0',NULL);
+(1,'Task 1','task@task.com','task','0',NULL),
+(2,'Task 2','task@task.com','task 2','0',NULL),
+(3,'Task 3 ','task@task.com','task 3','0',NULL),
+(4,'Task 4','test@test.com','test','0',NULL),
+(5,'Task 5 ','test2@gmail.com','task 5 ','0',NULL);
 
 /*Table structure for table `users` */
 
