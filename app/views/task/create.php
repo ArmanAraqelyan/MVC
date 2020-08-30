@@ -4,7 +4,9 @@
             <h1><?= $data['title']; ?></h1>
         </div>
         <div class="col-md-12">
-            <p class="text-danger"><?= $data['error'] ?></p>
+            <?php if ($data['error']) { ?>
+                <p class="text-danger"><?= $data['error'] ?></p>
+            <?php } ?>
             <form action="<?= BASEURL ?>task/store" method="post">
                 <div class="form-group">
                     <label for="username">User Name:</label>
