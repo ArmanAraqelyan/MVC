@@ -15,7 +15,7 @@ class Controller
 
 	public function redirect($url)
 	{
-		header('Location: ' . BASEURL . '/' . $url);
+		header('Location: ' . BASEURL . $url);
 		exit;
 	}
 }

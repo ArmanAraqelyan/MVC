@@ -8,7 +8,7 @@ $(document).ready(function () {
         }]
     })
 
-    $(".delete-task").on("click", function (e) {
+    $(document).on('click',".delete-task",function (e) {
         let deleteTask = confirm('Are you sure?');
         if (!deleteTask) {
             return false;

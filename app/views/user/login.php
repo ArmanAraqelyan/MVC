@@ -1,7 +1,7 @@
 <div class="container tasks">
     <div class="">
         <h1>Login</h1>
-        <form action="<?= BASEURL ?>/user/auth" method="post">
+        <form action="<?= BASEURL ?>user/auth" method="post">
             <div class="form-group">
                 <label>Login</label>
                 <input type="text" class="form-control" name="login" placeholder="Enter login" required>

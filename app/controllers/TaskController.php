@@ -3,7 +3,7 @@
 class TaskController extends Controller {
 
 	public function index()
-	{		
+	{
 		$data['title'] = 'Task List';
 
 		$data['task'] = $this->model('Task')->getAll();

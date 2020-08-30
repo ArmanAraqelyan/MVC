@@ -5,7 +5,7 @@
         </div>
         <div class="col-md-12">
             <p class="text-danger"><?= $data['error'] ?></p>
-            <form action="<?= BASEURL ?>/task/store" method="post">
+            <form action="<?= BASEURL ?>task/store" method="post">
                 <div class="form-group">
                     <label for="username">User Name:</label>
                     <input type="text" class="form-control" name="name" placeholder="Enter name" id="username" required>

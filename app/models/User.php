@@ -6,7 +6,7 @@ class User {
 
     public function __construct()
     {
-        $this->db = new Database;
+        $this->db = new DB;
         $this->table = 'users';
 
     }
@@ -21,12 +21,12 @@ class User {
     public function auth($login, $password)
     {
         if ($login && $password) {
-            $this->db->query("SELECT id FROM {$this->table} WHERE login = :login and password = :password");
-            $this->db->bind(':login', $login);
-            $this->db->bind(':password', $password);
-            $isAuth = $this->db->single();
-
-            if ($isAuth === false) {
+            $this->db->prepare("SELECT id FROM {$this->table} WHERE login = ? and password = ?");
+            $this->db->bindParam('ss', [$login, $password]);
+            $this->db->execute();
+            $result = $this->db->getResult();
+            $user = $result->fetch_array(MYSQLI_ASSOC);
+            if (!$user['id']) {
                 $error = "Your Login or Password is invalid";
                 return $error;
             } else {
@@ -39,9 +39,4 @@ class User {
             }
         }
     }
-
-    public function getUser()
-	{
-		return $this->name;
-	}
 }

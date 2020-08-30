@@ -1,8 +1,8 @@
 <?php
 
-require_once 'core/App.php';
-require_once 'core/Controller.php';
+require_once 'vendor/main/App.php';
+require_once 'vendor/main/Controller.php';
 
-require_once 'config/config.php';
+require_once 'vendor/config/config.php';
 
-require_once 'core/Database.php';
+require_once 'vendor/main/DB.php';

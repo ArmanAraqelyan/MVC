@@ -1,6 +1,6 @@
 /*
 SQLyog Community v13.1.5  (64 bit)
-MySQL - 5.6.37 : Database - mvc
+MySQL - 5.6.37 : --Database - mvc
 *********************************************************************
 */
 
